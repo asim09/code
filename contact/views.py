@@ -4,3 +4,7 @@ from django.shortcuts import render,HttpResponse
 
 def index(request):
     return HttpResponse('<h2>This is my First Django deployment<h2>')
+
+
+def show(request):
+    return HttpResponse('<h2>This is my First Django Show View<h2>')
