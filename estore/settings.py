@@ -75,35 +75,39 @@ WSGI_APPLICATION = 'estore.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-# if 'django_container' in current_dir:
-#
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#         }
-#     }
-# else:
-#     DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.mysql',
-#             # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#             'NAME': 'myflashdb',
-#             'HOST': 'localhost',
-#             'USER': 'root',
-#             'PASSWORD': 'root'
-#         }
-#     }
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myflashdb',
-        'HOST': 'localhost',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'PORT':'3306',
+if 'django_container' in current_dir:
+
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'myflashdb',
+            'HOST': 'localhost',
+            'USER': 'root',
+            'PASSWORD': 'root',
+            'PORT': '3306',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'myflashdb',
+            'HOST': 'myflashdb.ckqujvlhwvlg.ap-south-1.rds.amazonaws.com',
+            'USER': 'root',
+            'PASSWORD': 'root',
+            'PORT': '3306',
+        }
+    }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'myflashdb',
+#         'HOST': 'localhost',
+#         'USER': 'root',
+#         'PASSWORD': 'root',
+#         'PORT':'3306',
+#     }
+# }
 
 
 # Password validation
