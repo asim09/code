@@ -97,7 +97,7 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'myflashdb',
+            'NAME': 'flash',
             # 'HOST': 'myflashdb.ckqujvlhwvlg.ap-south-1.rds.amazonaws.com',
             'HOST': 'myflashdb.ckqujvlhwvlg.ap-south-1.rds.amazonaws.com',
             'USER': 'root',
