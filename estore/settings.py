@@ -99,7 +99,7 @@ else:
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'myflashdb',
             # 'HOST': 'myflashdb.ckqujvlhwvlg.ap-south-1.rds.amazonaws.com',
-            'HOST': 'localhost',
+            'HOST': 'myflashdb.ckqujvlhwvlg.ap-south-1.rds.amazonaws.com',
             'USER': 'root',
             'PASSWORD': 'asim@2015',
             'PORT': '3306',
