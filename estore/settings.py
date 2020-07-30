@@ -94,8 +94,8 @@ else:
             'NAME': 'myflashdb',
             # 'HOST': 'myflashdb.ckqujvlhwvlg.ap-south-1.rds.amazonaws.com',
             'HOST': 'localhost',
-            'USER': 'root@localhost',
-            'PASSWORD': 'root',
+            'USER': 'asim',
+            'PASSWORD': 'asim@2015',
             'PORT': '3306',
         }
     }
