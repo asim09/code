@@ -97,11 +97,11 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'flash',
+            'NAME': 'myflashdb',
             # 'HOST': 'myflashdb.ckqujvlhwvlg.ap-south-1.rds.amazonaws.com',
-            'HOST': 'myflashdb.ckqujvlhwvlg.ap-south-1.rds.amazonaws.com',
+            'HOST': 'localhost',
             'USER': 'root',
-            'PASSWORD': 'asim@2015',
+            'PASSWORD': 'password',
             'PORT': '3306',
         }
     }
