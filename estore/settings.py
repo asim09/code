@@ -75,35 +75,18 @@ WSGI_APPLICATION = 'estore.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-if 'django_container' in current_dir:
 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'myflashdb',
-            # 'HOST': 'localhost',
-            'USER': 'root',
-            'PASSWORD': 'root',
-            'PORT': '3306',
-        }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myflashdb',
+        # 'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'PORT': '3306',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
-    }
-    # DATABASES = {
-    #     'default': {
-    #         'ENGINE': 'django.db.backends.mysql',
-    #         'NAME': 'myflashdb',
-    #         # 'HOST': 'localhost',
-    #         'USER': 'root',
-    #         'PASSWORD': 'password',
-    #         'PORT': '3306',
-    #     }
-    # }
+}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
