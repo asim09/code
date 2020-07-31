@@ -88,22 +88,22 @@ if 'django_container' in current_dir:
         }
     }
 else:
-    # DATABASES = {
-    #     'default': {
-    #         'ENGINE': 'django.db.backends.sqlite3',
-    #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #     }
-    # }
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'myflashdb',
-            # 'HOST': 'localhost',
-            'USER': 'root',
-            'PASSWORD': 'password',
-            'PORT': '3306',
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+    # DATABASES = {
+    #     'default': {
+    #         'ENGINE': 'django.db.backends.mysql',
+    #         'NAME': 'myflashdb',
+    #         # 'HOST': 'localhost',
+    #         'USER': 'root',
+    #         'PASSWORD': 'password',
+    #         'PORT': '3306',
+    #     }
+    # }
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
