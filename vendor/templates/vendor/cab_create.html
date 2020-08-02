@@ -1,0 +1,17 @@
+{% extends 'vendor/main.html' %}
+
+
+{% block content %}
+
+
+<form action="{% url 'create_cab' %}" method="POST">
+  {% csrf_token %}
+{{ form}}
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
+
+
+
+
